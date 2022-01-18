@@ -130,7 +130,7 @@ import FormDrawer from './FormDrawer'
 import JsonDrawer from './JsonDrawer'
 import RightPanel from './RightPanel'
 import {
-  inputComponents, selectComponents, layoutComponents, formConf
+  inputComponents, selectComponents, layoutComponents, formConf, vantComponents
 } from '@/components/generator/config'
 import {
   exportDefault, beautifierConf, isNumberStr, titleCase, deepClone, isObjectObject
@@ -189,6 +189,10 @@ export default {
       saveDrawingListDebounce: debounce(340, saveDrawingList),
       saveIdGlobalDebounce: debounce(340, saveIdGlobal),
       leftComponents: [
+        {
+          title: 'Vant组件',
+          list: vantComponents
+        },
         {
           title: '输入型组件',
           list: inputComponents

@@ -105,6 +105,7 @@ export default {
   },
   render(h) {
     const dataObject = makeDataObject()
+    console.log('dataObject', dataObject);
     const confClone = deepClone(this.conf)
     const children = this.$slots.default || []
 

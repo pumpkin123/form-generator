@@ -110,6 +110,7 @@ export default {
   ],
   render(h) {
     const layout = layouts[this.currentItem.__config__.layout]
+    // console.log('layout', layout)
 
     if (layout) {
       return layout.call(this, h, this.currentItem, this.index, this.drawingList)

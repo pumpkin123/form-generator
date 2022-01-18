@@ -1,3 +1,47 @@
+// vant组件
+export const vantComponents = [{
+  // 组件的自定义配置
+  __config__: {
+    label: '按钮',
+    labelWidth: null,
+    showLabel: false,
+    changeTag: false,
+    tag: 'van-button',
+    tagIcon: 'input',
+    defaultValue: undefined,
+    required: true,
+    layout: 'colFormItem',
+    span: 12,
+    document: 'https://youzan.github.io/vant/#/zh-CN/button',
+    buttonText: '按钮',
+    // 正则校验规则
+    regList: []
+  },
+  __slot__: {
+    default: '主要按钮'
+  },
+  type: 'primary',
+  disabled: false,
+  plain: true,
+  hairline: true,
+  loading: true
+  // 组件的插槽属性
+  // __slot__: {
+  //   prepend: '',
+  //   append: ''
+  // },
+  // 其余的为可直接写在组件标签上的属性
+  // placeholder: '请输入',
+  // style: { width: '100%' },
+  // clearable: true,
+  // 'prefix-icon': '',
+  // 'suffix-icon': '',
+  // maxlength: null,
+  // 'show-word-limit': false,
+  // readonly: false,
+  // disabled: false
+}]
+
 // 表单属性【右面板】
 export const formConf = {
   formRef: 'elForm',
